@@ -1,13 +1,13 @@
 # spacex_dragon_spacesuit_demo
 
-3D interactive demo scene with the new rigged and animated high-res SpaceX spacesuit model on a spacecraft
+An interactive demo scene with a new rigged and animated high-res SpaceX spacesuit model on a spacecraft.
 
 ## Main features
 - High-res and lightweight 3d model
 - Bloom and depth postprocessing
 - Skeleton animation
 - Skybox environment
-- Mobile friendly
+- Mobile-friendly
 - Handy architecture
 - High performance
 
