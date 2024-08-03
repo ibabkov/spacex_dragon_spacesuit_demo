@@ -9,8 +9,9 @@ export const MODEL_INITIAL_ROTATION = new Euler(0, Math.PI * 0.25, 0);
 export const MODAL_NORMAL_MAP_SCALE = new Vector2(0.3);
 
 /** Model shadows */
-export const MODEL_SHADOW_POSITION = new Vector3(0, -0.5, 0);
-export const MODEL_SHADOW_SCALE = 30;
+export const MODEL_SHADOW_POSITION = new Vector3(0, -0.6, 0);
+export const MODEL_SHADOW_SCALE = 5;
+export const MODEL_SHADOW_OPACITY = 0.8;
 export const MODEL_SHADOW_COLOR = new Color('#000000');
 
 /** Model animation */

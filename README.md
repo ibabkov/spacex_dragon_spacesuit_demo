@@ -3,6 +3,7 @@
 An interactive demo scene with a new rigged and animated high-res SpaceX spacesuit model on a spacecraft.
 
 ## Main features
+
 - High-res and lightweight 3d model
 - Bloom and depth postprocessing
 - Skeleton animation
@@ -10,7 +11,6 @@ An interactive demo scene with a new rigged and animated high-res SpaceX spacesu
 - Mobile-friendly
 - Handy architecture
 - High performance
-
 
 ## Getting Started
 
