@@ -1,7 +1,7 @@
 import { AnimationClip, CubeTexture, Group } from 'three';
 
-export interface ISceneData {
+export type SceneData = {
 	scene: Group;
 	animations: AnimationClip[];
 	skyboxTexture: CubeTexture;
-}
+};

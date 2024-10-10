@@ -2,9 +2,9 @@ import React from 'react';
 
 import { SRGBColorSpace } from 'three';
 
-import { ISceneData } from '../types/model';
+import { SceneData } from '../types/model';
 
-export const useUpdateSkyboxTexture = (sceneData: ISceneData | null) => {
+export const useUpdateSkyboxTexture = (sceneData: SceneData | null) => {
 	React.useEffect(() => {
 		if (!sceneData) return;
 

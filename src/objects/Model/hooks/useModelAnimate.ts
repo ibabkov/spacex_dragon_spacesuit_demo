@@ -2,9 +2,9 @@ import React from 'react';
 
 import { useAnimations } from '@react-three/drei';
 import { Clock, Group } from 'three';
-import { useFrame, useThree } from '@react-three/fiber';
+import { useThree } from '@react-three/fiber';
 
-import { ISceneData } from '../../../types/model';
+import { SceneData } from '../../../types/model';
 import { getModelAnimationProgress } from '../helpers';
 import {
 	MODEL_POSITION_ANIMATION_PERIOD,
@@ -13,8 +13,9 @@ import {
 	MODEL_ROTATION_ANIMATION_PERIOD,
 	MODEL_ROTATION_ANIMATION_SCALE,
 } from '../../../constants/scenes/spaceShip';
+import { useFrame } from '../../../hooks/useFrame';
 
-export function useModelAnimate(ref: React.MutableRefObject<Group | null>, model: ISceneData) {
+export function useModelAnimate(ref: React.MutableRefObject<Group | null>, model: SceneData) {
 	const { animations } = model;
 	const { scene } = useThree();
 	const { actions } = useAnimations(animations, scene);
@@ -33,5 +34,5 @@ export function useModelAnimate(ref: React.MutableRefObject<Group | null>, model
 
 		ref.current.position.set(-position, position + MODEL_POSITION_Y_SHIFT, -position);
 		ref.current.rotation.set(0, rotation, 0);
-	});
+	}, 30);
 }

@@ -1,6 +1,8 @@
 import { Color, Euler, Vector2, Vector3 } from 'three';
 
-export const MODEL_URL = '/model/model.gltf';
+import { constructCdnUrl } from '../../../utils';
+
+export const MODEL_URL = constructCdnUrl('/public/model/model.gltf');
 export const MODEL_SCALE = 0.18;
 export const MODEL_POSITION_Y_SHIFT = -2;
 export const MODEL_INITIAL_ROTATION = new Euler(0, Math.PI * 0.25, 0);

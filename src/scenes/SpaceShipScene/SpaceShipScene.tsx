@@ -9,14 +9,12 @@ import { Postprocessing } from '../../objects/Postprocessing';
 import { useSceneData } from '../../hooks/useSceneData';
 import { useUpdateModelMaterials } from '../../hooks/useUpdateModelMaterials';
 import { useUpdateSkyboxTexture } from '../../hooks/useUpdateSkyboxTexture';
-import { useSceneLoad } from '../../hooks/useSceneLoad';
 import { SKYBOX_BLURRINESS, SKYBOX_RESOLUTION } from '../../constants/scenes/spaceShip';
 
 const SpaceShipScene = React.memo(() => {
 	const sceneData = useSceneData();
 	useUpdateModelMaterials(sceneData);
 	useUpdateSkyboxTexture(sceneData);
-	useSceneLoad(sceneData);
 
 	if (!sceneData) {
 		return null;
