@@ -3,9 +3,9 @@ import React from 'react';
 import { FrontSide, Mesh, MeshStandardMaterial } from 'three';
 
 import { MODAL_NORMAL_MAP_SCALE } from '../constants/scenes/spaceShip';
-import { ISceneData } from '../types/model';
+import { SceneData } from '../types/model';
 
-export const useUpdateModelMaterials = (sceneData: ISceneData | null) => {
+export const useUpdateModelMaterials = (sceneData: SceneData | null) => {
 	React.useEffect(() => {
 		if (!sceneData) return;
 

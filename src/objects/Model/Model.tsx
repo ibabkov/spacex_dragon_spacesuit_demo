@@ -12,13 +12,13 @@ import {
 	MODEL_SHADOW_POSITION,
 	MODEL_SHADOW_SCALE,
 } from '../../constants/scenes/spaceShip';
-import { ISceneData } from '../../types/model';
+import { SceneData } from '../../types/model';
 
-export interface IModelProps {
-	sceneData: ISceneData;
-}
+export type ModelProps = {
+	sceneData: SceneData;
+};
 
-const Model = React.memo((props: IModelProps) => {
+const Model = React.memo((props: ModelProps) => {
 	const modelRef = React.useRef<Group | null>(null);
 	const { sceneData } = props;
 
