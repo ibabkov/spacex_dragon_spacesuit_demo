@@ -12,6 +12,24 @@
 	text-align: center;
 }
 
+.advice {
+	 position: absolute;
+	 top: 28px;
+	 font-size: 20px;
+	 padding: 0 20px;
+	 animation: fade-in 0.5s linear;
+ }
+
+.advice-title {
+	display: block;
+	padding-bottom: 20px;
+	font-style: italic;
+}
+
+.advice-text {
+	display: block;
+}
+
 .progress {
 	position: relative;
 	width: 100%;
