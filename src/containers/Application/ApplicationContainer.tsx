@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 import { Canvas, RootState } from '@react-three/fiber';
@@ -8,7 +10,7 @@ import { SpaceShipScene } from '../../scenes/SpaceShipScene';
 import { SceneLayout } from '../../components/SceneLayout';
 import { useStore } from '../../hooks/useStore';
 
-export const ApplicationContainer: React.FC = () => {
+export const ApplicationContainer = () => {
 	const { loadingProgress } = useStore();
 
 	return (

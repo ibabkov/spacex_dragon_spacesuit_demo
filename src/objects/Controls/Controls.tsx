@@ -10,7 +10,7 @@ import {
 	CAMERA_SHAKE_OPTIONS,
 } from '../../constants/scenes/spaceShip';
 
-export const Controls: React.FC = () => {
+export const Controls = () => {
 	const orbitControls = React.useRef<OrbitControlsImpl | null>(null);
 
 	React.useEffect(() => {
