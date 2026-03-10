@@ -8,7 +8,7 @@ import {
 	DIRECTIONAL_Z_POSITION,
 } from '../../constants/scenes/spaceShip';
 
-export const Lights: React.FC = () => {
+export const Lights = () => {
 	return (
 		<>
 			<directionalLight
