@@ -1,4 +1,4 @@
 {
 	"target": "latest",
-	"reject": ["postprocessing"]
+	"reject": ["postprocessing", "three", "@types/three", "eslint"]
 }
